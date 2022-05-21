@@ -1,0 +1,333 @@
+<html>
+
+<style>
+.header {	position: relative;
+			top:0;	
+			margin:0px;
+			z-index: 1;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: #1E90FF;
+			color: white;
+			box-shadow: 0px 8px 4px grey;
+			overflow: hidden;
+			padding-left:20px;
+			font-family: 'Josefin Sans';
+			font-size: 2vw;
+			width: 100%;
+			height:8%;
+			text-align: center;
+		}
+		.topnav {
+  overflow: hidden;
+  background-color: #00008B;
+}
+
+.topnav-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right a:hover {
+  background-color: #ECFAC0;
+  color: black;
+}
+
+.topnav-right a.active {
+  background-color: #ECFAC0
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #000003;
+	}
+	25% {
+		background: #9797FC;
+	}
+	50% {
+		background: #F57BF7;
+	}
+	75% {
+		background: #FE929F;
+	}
+	100% {
+		background: #7BF0F7;
+	}
+}
+
+body {
+  background-image:url('https://img.freepik.com/free-vector/trading-background-with-graphic-illustration-blue-heart-rate-that-is-rising-upwards_159711-165.jpg?size=626&ext=jpg'); 
+  background-color:#000003 ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0px 0px;
+  }
+  .button {
+  background-color: #091425; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 16px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+form {border: 3px solid #f1f1f1; margin-left:400px;margin-right:400px;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-bottom:18px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #091425;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom:10px;
+  border: none;
+  cursor: pointer;
+  width: 17%;
+  border-radius:4px;
+  font-family:Montserrat;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.home{
+	margin:80px;
+	
+  width: 84%;
+  height: 500px;
+  padding-top:10px;
+  padding-left: 30px;  
+  
+}
+.login{
+	margin:80px;
+	box-sizing: content-box;  
+  width: 84%;
+  height: 420px;
+  padding: 30px;  
+  border: 10px solid blue;
+}
+.left,.right{
+ box-sizing: content-box; 
+ height: 400px;
+ margin:20px;
+ border: 10px solid blue;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #F8FD8F;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+*{
+        margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	text-decoration:none;
+	font-family:montserrat;
+}
+
+
+
+.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"],.main input[type="text"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #800080;
+	padding:15px 3px;
+	width:400px;
+	outline:none;
+	color:white;
+	border-radius:100px;
+	transition:0.25s;
+	font-size:20;
+	
+}
+.bor{
+border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #800080;
+	padding:10px 3px;
+	width:500px;
+	outline:none;
+	color:white;
+	transition:0.25s;}
+.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus,.main input[type="text"]:focus{
+	width:280px;
+	border-color:#8e44ad;
+}
+.logbtn{
+	display:block;
+	width:35%;
+	height:50px;
+	border:none;
+	border-radius:24px;
+	background:linear-gradient(120deg,#3498db,#8e44ad,#3498db,#8e44ad);
+	background-size:200%;
+	color:#fff;
+	outline:none;
+	cursor:pointer;
+	transition:.5s;
+	font-size:25;
+}
+.logbtn:hover{
+	background-center;
+}
+
+input::placeholder{
+	color:#F5FFFA;
+}
+.bottom-text{
+	margin-top:60px;
+	text-align:center;
+	font-size:13px;
+
+}
+
+</style>
+<body>
+
+<div class="header">    
+<div style="width:50%;float:left;font-size:2vw;text-align:left;color:black; padding-top:1%;padding-left:5%;">Sales Forecast</div>
+  <div class="topnav-right"style="padding-top:0.5%;">
+    
+    <a  href="{{ url_for('home')}}">Home</a>
+    <a href="/intro">Introduction</a>
+    <a class="active"  href="/predict">Forecast</a>
+  </div>
+</div>
+</div>
+<p><a target="blank" href="https://techstacker.com/how-to-loop-background-color-animation-css/"></a></p>
+	
+<br><br><br><br><br><br><br><br><br><br>
+	<form class="main" action="/login" method="post">
+		<br>
+		<font size=20><input type="text" name="year" placeholder="Enter the sales prices for the first 10 days"/></font>
+		<center><input type="submit" class="logbtn" value="Predict"></center>
+		<div class="bor"><b><font color="white" size=5>{{showcase}}</font></b</div>
+	</form>
+
+</body>
+
+</html>
